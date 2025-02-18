@@ -29,6 +29,7 @@ Note: project is not ready to run it. It shows overall vision how things can be 
 - Follows CQRS. Commands(state changes with preffix `.command`), Queries(data fetching with preffix `.query`)
 - Has own params and response interface
 - Know nothing about ways how can be executed(rabbit queue, http...)
+- Should be tested
 
 ## Infrastructure layer
 ### `/src/controllers` folder
