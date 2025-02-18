@@ -19,6 +19,7 @@ Possible downsides:
 - uses `unit of work` and `identity map` patterns from Java/C# world under the hood. Might be a bit confusing after usual `active record` from start to follow, but it pays off.
 
 # Structure
+Note: project is not ready to run it. It shows overall vision how things can be structured. Additional abstractions(`CQRS`, separated `comand/query` interfaces) might be unwanted 
 
 ## Application layer
 ### `/src/application` folder
