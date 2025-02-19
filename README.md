@@ -1,5 +1,6 @@
 ## `typebox` + `ajv` vs `class-validator` as validator
-example: `src/controllers/users/create-user/create-user.request.dto.ts`
+example: `src/controllers/users/create-user/create-user.request.dto.ts` <br>
+
 `class-validator` is a standard validation library for nestjs. But IMHO it's not the best option
 - it really increases bundle size(~13 mb)
 - relies on decorators. Yes, nestjs is build on top of decorators but if it's possible to avoid them why don't do it? They always have some magic under the hood comparing to straight code.
