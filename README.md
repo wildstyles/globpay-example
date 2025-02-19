@@ -1,4 +1,5 @@
 ## `typebox` + `ajv` vs `class-validator` as validator
+example: `src/controllers/users/create-user/create-user.request.dto.ts`
 `class-validator` is a standard validation library for nestjs. But IMHO it's not the best option
 - it really increases bundle size(~13 mb)
 - relies on decorators. Yes, nestjs is build on top of decorators but if it's possible to avoid them why don't do it? They always have some magic under the hood comparing to straight code.
@@ -13,6 +14,7 @@ I have used both `typeorm` and `sequelize` and experience wasn't that smooth.
 - comparing to `mikroorm` they don't have such strong autocomplete
 - check issues on `typeorm`(1,6k) github page and `mikroorm`(50). Maintainer of `mikroorm` actively develops his product
 - Community loves it due to reddit :)
+- Very similar to typeorm in term of entity creation
 - now it's matured enought and battle tested. So ready for production as well
 
 Possible downsides:
