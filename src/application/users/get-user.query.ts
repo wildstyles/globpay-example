@@ -1,7 +1,6 @@
 
 import { GetUserResponseDto } from '@/controllers/users/get-user/get-user.response.dto';
 
-
 import { Injectable } from '@nestjs/common';
 
 import { QueryHandler } from '../common/query.handler';

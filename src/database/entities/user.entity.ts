@@ -9,10 +9,4 @@ export class UserEntity extends BaseEntity {
 
   @Property({ length: 255, type: 'varchar' })
   email: string;
-
-  @Property({ type: 'numeric' })
-  age: number;
-
-  @Property({ length: 255, type: 'varchar' })
-  password: string;
 }

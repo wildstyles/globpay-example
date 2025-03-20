@@ -1,3 +1,5 @@
+
+
 ## `typebox` + `ajv` vs `class-validator` as validator
 example: `src/controllers/users/create-user/create-user.request.dto.ts` <br>
 
@@ -6,6 +8,9 @@ example: `src/controllers/users/create-user/create-user.request.dto.ts` <br>
 - relies on decorators. Yes, nestjs is build on top of decorators but if it's possible to avoid them why don't do it? They always have some magic under the hood comparing to straight code.
 - not the fastest option
 - At least for `scott` we might need dynamic schema validation by white-label. It will be easy to oparate with common validation objects then by classes with decorators
+#### UPDATE:
+- by using `class-validator` we become dependant on it. By using `typebox` we can use any JSON schema validator we want since `typebox` generates common JSON schema which is valid even in other programming languages.
+- combination works the same with **swagger** with help of reflection. `src/controllers/common/validation.ts`. Since `class-validator` is a standart for nestjs `PopulateApiProperty` emulates it's behaviour by reflection.
 
 `ajv` - fastest validator on market. Combined with `typebox` which creates typed JSON schema without decorators it really shines.
 

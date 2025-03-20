@@ -20,6 +20,6 @@ export class GetUserController {
 
     const result = await this.handler.execute(query);
 
-    return new GetUserResponseDto(result.id, result.name, result.email, result.age);
+    return new GetUserResponseDto(result.id, result.name, result.email);
   }
 }

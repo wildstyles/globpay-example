@@ -10,12 +10,8 @@ export class GetUserResponseDto {
   @ApiProperty()
   readonly email: string;
 
-  @ApiProperty()
-  readonly age: number;
-
-  constructor(id: string, name: string, email: string, age: number) {
+  constructor(id: string, name: string, email: string) {
     this.id = id;
-    this.age = age;
     this.email = email;
     this.name = name;
   }

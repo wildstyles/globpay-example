@@ -43,7 +43,7 @@ export function PopulateApiProperty<T extends TProperties>(schema: TObject<T>) {
   return function (constructor: new (...args: unknown[]) => unknown) {
     for (const key in schema.properties) {
       Reflect.decorate(
-        // TODO: has poor required* support
+        // TODO: has poor required* support(It means * sign is present for all fields. Does not effect validation itself)
         [ApiProperty(schema.properties[key])],
         constructor.prototype,
         key,
